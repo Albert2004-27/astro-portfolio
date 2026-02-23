@@ -8,44 +8,46 @@ export interface SkillGroup {
 
 export const skillGroups: SkillGroup[] = [
   {
-    category: 'Languages',
+    category: 'Languages & Data',
     icon: 'code',
     skills: [
       { name: 'Python', level: 3 },
-      { name: 'R', level: 2 },
       { name: 'SQL', level: 2 },
-      { name: 'TypeScript', level: 1 },
+      { name: 'R', level: 2 },
+      { name: 'LaTeX', level: 2 },
     ],
   },
   {
-    category: 'ML / Reinforcement Learning',
+    category: 'Deep Learning & RL',
     icon: 'brain',
     skills: [
       { name: 'PyTorch', level: 3 },
-      { name: 'Stable-Baselines3', level: 3 },
-      { name: 'Scikit-learn', level: 2 },
-      { name: 'Hugging Face', level: 1 },
+      { name: 'TensorFlow', level: 2 },
+      { name: 'TD3 / Deep RL', level: 3 },
+      { name: 'Transformers', level: 2 },
+      { name: 'Stable-Baselines3', level: 2 },
+    ],
+  },
+  {
+    category: 'Generative AI & RAG',
+    icon: 'ai',
+    skills: [
+      { name: 'RAG Architecture', level: 3 },
+      { name: 'LangChain', level: 2 },
+      { name: 'FAISS / BM25', level: 2 },
+      { name: 'Prompt Engineering', level: 2 },
+      { name: 'Cross-Encoder Reranking', level: 2 },
     ],
   },
   {
     category: 'Quantitative Finance',
     icon: 'chart',
     skills: [
-      { name: 'Backtrader', level: 3 },
-      { name: 'TA-Lib', level: 3 },
-      { name: 'pandas-ta', level: 2 },
-      { name: 'yfinance / ccxt', level: 3 },
-      { name: 'TQuantLib', level: 1 },
-    ],
-  },
-  {
-    category: 'Data & Tools',
-    icon: 'tools',
-    skills: [
+      { name: 'TQuantLib', level: 2 },
+      { name: 'YFinance / TEJ API', level: 3 },
+      { name: 'Backtesting', level: 3 },
+      { name: 'Risk Metrics', level: 3 },
       { name: 'Pandas / NumPy', level: 3 },
-      { name: 'Git', level: 2 },
-      { name: 'Docker', level: 1 },
-      { name: 'Google Colab', level: 2 },
     ],
   },
 ];
