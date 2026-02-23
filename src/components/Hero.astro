@@ -3,36 +3,52 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <section class="min-h-[90vh] flex items-center bg-gradient-to-br from-slate-50 to-white pt-8">
-  <div class="max-w-6xl mx-auto px-4 py-20">
-    <div class="max-w-2xl">
-      <p class="text-accent font-mono text-sm font-medium tracking-widest uppercase mb-4">
-        Portfolio
-      </p>
-      <h1 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight mb-4">
-        Bo-Hao Chen
-      </h1>
-      <p class="text-slate-600 text-lg md:text-xl leading-relaxed mb-8">
-        Quantitative Finance &nbsp;·&nbsp; Deep Reinforcement Learning &nbsp;·&nbsp; Generative AI
-      </p>
-      <p class="text-slate-500 text-base max-w-xl leading-relaxed mb-10">
-        NCCU Finance & Statistics (Top 5%) → NTU Finance M.S. (2026).
-        RL portfolio management research at Academia Sinica.
-        Quant Analyst Intern at TEJ · Data Analyst Intern at RGA.
-      </p>
-      <div class="flex flex-wrap gap-4">
-        <a
-          href={`${base}projects`}
-          class="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 cursor-pointer"
-        >
-          View Projects
-        </a>
-        <a
-          href={`${base}cv.pdf`}
-          download
-          class="border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors duration-200 cursor-pointer"
-        >
-          Download CV
-        </a>
+  <div class="max-w-6xl mx-auto px-4 py-20 w-full">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Text -->
+      <div>
+        <p class="text-accent font-mono text-sm font-medium tracking-widest uppercase mb-4">
+          Portfolio
+        </p>
+        <h1 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight mb-4">
+          Bo-Hao Chen
+        </h1>
+        <p class="text-slate-600 text-lg md:text-xl leading-relaxed mb-8">
+          Quantitative Finance &nbsp;·&nbsp; Deep Reinforcement Learning &nbsp;·&nbsp; Generative AI
+        </p>
+        <p class="text-slate-500 text-base max-w-xl leading-relaxed mb-10">
+          NCCU Finance & Statistics (Top 5%) → NTU Finance M.S. (2026).
+          RL portfolio management research at Academia Sinica.
+          Quant Analyst Intern at TEJ · Data Analyst Intern at RGA.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href={`${base}projects`}
+            class="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 cursor-pointer"
+          >
+            View Projects
+          </a>
+          <a
+            href={`${base}cv.pdf`}
+            download
+            class="border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors duration-200 cursor-pointer"
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+
+      <!-- Photo -->
+      <div class="flex justify-center md:justify-end">
+        <div class="relative">
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/20 to-primary/20 translate-x-3 translate-y-3"></div>
+          <img
+            src={`${base}albert-chen.jpg`}
+            alt="Bo-Hao Chen"
+            class="relative w-72 md:w-80 rounded-2xl object-cover shadow-xl border border-slate-200"
+            style="aspect-ratio: 3/4; object-position: top;"
+          />
+        </div>
       </div>
     </div>
   </div>

@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
   {
     org: 'Reinsurance Group of America (RGA)',
     role: 'Data Analyst Intern',
-    period: 'Jul 2025 – Present',
+    period: 'Jul 2025 – Oct 2025',
     location: 'Taipei, Taiwan',
     bullets: [
       'Processed and validated premium and claims data in the internal ACF system, ensuring accuracy and consistency for actuarial and finance reporting.',

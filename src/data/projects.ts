@@ -5,7 +5,7 @@ export interface Project {
   github?: string;
   demo?: string;
   featured: boolean;
-  category: 'quant' | 'rl' | 'rag' | 'data' | 'other';
+  category: 'quant' | 'rl' | 'rag' | 'data' | 'web' | 'other';
 }
 
 export const projects: Project[] = [
@@ -29,12 +29,21 @@ export const projects: Project[] = [
     category: 'rag',
   },
   {
-    title: 'Taiwan Quant Strategies & Backtesting',
+    title: 'Graduate Planning Group (GPG)',
     description:
-      'Quantitative trading experiments on Taiwan equities (TWSE). Includes a Taiwan stock web scraper, momentum/mean-reversion strategy backtests, and Monte Carlo simulation notebooks. Early-stage project with plans to expand into a full strategy framework.',
-    tags: ['Python', 'Jupyter', 'Pandas', 'finlab', 'Web Scraping'],
-    github: 'https://github.com/Albert2004-27/quant-project',
-    featured: true,
-    category: 'quant',
+      'Co-founded and built the full website for GPG — a boutique consulting firm specializing in dual-track strategy for Taiwan domestic university applications (NCCU/NTU) and overseas admissions (Oxford, MIT, Imperial). Multi-page site with mentor profiles, service tiers, FAQ, and Google Analytics integration.',
+    tags: ['HTML', 'Tailwind CSS', 'JavaScript', 'Google Analytics'],
+    demo: 'https://gpgconsultings.com',
+    featured: false,
+    category: 'web',
+  },
+  {
+    title: '鳳麟柑仔燈工作室',
+    description:
+      "Designed and built the website for a family-run traditional craft studio specializing in handmade glass kandeng lanterns, inheriting century-old Taiwanese tin lamp craftsmanship. Showcases the artisan's portfolio and handles custom commission inquiries.",
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    demo: 'https://happytw88888-sketch.github.io/website/index.html',
+    featured: false,
+    category: 'web',
   },
 ];
