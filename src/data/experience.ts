@@ -44,6 +44,18 @@ export const experiences: Experience[] = [
     tags: ['Deep RL', 'PyTorch', 'TensorFlow', 'Backtesting', 'Finance'],
   },
   {
+    org: 'Institute of Statistical Science, Academia Sinica',
+    role: 'Summer Research Intern',
+    period: 'Jul 2024 – Aug 2024',
+    location: 'Taipei, Taiwan',
+    bullets: [
+      'Applied multi-stratum factorial experimental design theory (Chang & Cheng, 2018) to structure ML hyperparameter optimization under heterogeneous computing environments (varying days, OS, and processors).',
+      'Derived optimal treatment allocations by sequentially minimizing wordlength pattern criteria under Bayesian D-optimality across a 2/(2×2) block structure, identifying 384–1,152 optimal designs.',
+      'Presented research findings as a formal academic poster and PPT under the supervision of Associate Research Fellow Ming-Chung Chang.',
+    ],
+    tags: ['Experimental Design', 'Statistics', 'Factorial Designs', 'R', 'Hyperparameter Optimization'],
+  },
+  {
     org: 'National Chengchi University',
     role: 'B.S. Money & Banking · Double Major: Statistics · Minor: Mathematics',
     period: 'Sep 2022 – Jun 2026',
