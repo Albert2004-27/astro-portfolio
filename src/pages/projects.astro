@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects } from '../data/projects';
+
+const categories = ['All', 'RL', 'Quant', 'Data'] as const;
+---
+
+<BaseLayout
+  title="Projects"
+  description="All projects by Albert Chen in quantitative finance and machine learning."
+>
+  <div class="max-w-6xl mx-auto px-4 py-20">
+    <p class="text-accent font-mono text-sm uppercase tracking-widest mb-3">Work</p>
+    <h1 class="font-serif text-4xl font-bold text-primary mb-4">Projects</h1>
+    <p class="text-slate-500 max-w-xl mb-12">
+      Research and side projects in quantitative finance, reinforcement learning, and data
+      engineering.
+    </p>
+    <div class="flex flex-wrap gap-2 mb-10">
+      {categories.map((cat) => (
+        <span class="font-mono text-sm px-4 py-1.5 rounded-full border border-slate-200 text-slate-600 cursor-default select-none">
+          {cat}
+        </span>
+      ))}
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.map((project) => (
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          tags={project.tags}
+          github={project.github}
+          demo={project.demo}
+        />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

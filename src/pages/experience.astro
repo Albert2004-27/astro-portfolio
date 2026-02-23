@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ExperienceTimeline from '../components/ExperienceTimeline.astro';
+import { experiences } from '../data/experience';
+---
+
+<BaseLayout
+  title="Experience"
+  description="Albert Chen's work experience and education history."
+>
+  <div class="max-w-6xl mx-auto px-4 py-20">
+    <p class="text-accent font-mono text-sm uppercase tracking-widest mb-3">Background</p>
+    <h1 class="font-serif text-4xl font-bold text-primary mb-4">Experience</h1>
+    <p class="text-slate-500 max-w-xl mb-12">
+      Research, internships, and academic background.
+    </p>
+    <div class="max-w-3xl">
+      <ExperienceTimeline experiences={experiences} />
+    </div>
+  </div>
+</BaseLayout>
