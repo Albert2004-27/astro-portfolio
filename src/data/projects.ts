@@ -22,7 +22,7 @@ export const projects: Project[] = [
   {
     title: 'HERO: RAG System for ESG Document QA',
     description:
-      'Kaggle WattBot 2025 competition solution (Top 3/42). Hierarchical Evidence Retrieval & Optimization (HERO) pipeline for extracting evidence-backed estimates from scholarly sustainability papers. Hybrid BM25 + dense retrieval with cross-encoder reranking improved Recall@10 by +2.81pp.',
+      'Kaggle WattBot 2025 — 3rd Place (3/42). Hierarchical Evidence Retrieval & Optimization (HERO) pipeline for extracting evidence-backed estimates from scholarly sustainability papers. Hybrid BM25 + dense retrieval with cross-encoder reranking improved Recall@10 by +2.81pp.',
     tags: ['Python', 'RAG', 'BM25', 'Sentence-Transformers', 'Gemini', 'PyMuPDF'],
     github: 'https://github.com/Albert2004-27/WattBot-RAG-System',
     featured: true,
