@@ -14,10 +14,11 @@ export const experiences: Experience[] = [
     period: 'Jan 2026 – Present',
     location: 'Taipei, Taiwan',
     bullets: [
+      'Conducted systematic literature reviews on SSRN and Quantpedia, reproducing factor strategies and researching their adaptation to Taiwan equity markets (TWSE/TPEx) using TQuantLib; published findings as research articles for the quant community.',
       'Evaluated and enhanced the TQuant Lab platform documentation, troubleshooting API technical issues and streamlining the onboarding process for quantitative researchers.',
       'Integrated and processed large-scale market datasets using TEJ APIs and Python (Pandas), ensuring robust data pipelines for financial modeling and backtesting workflows.',
     ],
-    tags: ['TQuantLib', 'Python', 'Pandas', 'Quant Finance'],
+    tags: ['TQuantLib', 'Python', 'Pandas', 'SSRN', 'Quant Research'],
   },
   {
     org: 'Reinsurance Group of America (RGA)',
